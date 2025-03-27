@@ -3,9 +3,13 @@
 # Deploying Laraval Apps
 
 ## Checklist
-- [] Package [`spatie/laravel-backup`](https://spatie.be/docs/laravel-backup/v5/installation-and-setup) for automated backups
-- [] Package [`sentry/sentry-laravel`](https://docs.sentry.io/platforms/php/guides/laravel/) for application error monitoring
-- [] Package [`laravel/pulse`](https://laravel.com/docs/12.x/pulse#installation) for realtime performance monitoring 
+- [ ] Package [`spatie/laravel-backup`](https://spatie.be/docs/laravel-backup/v5/installation-and-setup) for automated backups
+- [ ] Package [`sentry/sentry-laravel`](https://docs.sentry.io/platforms/php/guides/laravel/) for application error monitoring
+- [ ] Package [`laravel/pulse`](https://laravel.com/docs/12.x/pulse#installation) for realtime performance monitoring
+
+```bash
+composer require spatie/laravel-backup sentry/sentry-laravel laravel/pulse
+``` 
 
 ## Initial Deployement
 - On your local machine run `npm run build` which will create a folder `public/build`, with the optimized assets for your app
